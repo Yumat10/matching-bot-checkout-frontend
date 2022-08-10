@@ -89,9 +89,9 @@
     }
 } */
 
-/* :root {
-    @apply antialiased font-inter;
-} */
+:root {
+    --navbar-height: 80px;
+}
 
 @layer base {
     html {

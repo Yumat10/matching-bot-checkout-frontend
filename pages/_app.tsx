@@ -12,6 +12,7 @@ import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
+import { BasicNavbar } from '../components/shared/navbar/BasicNavbar';
 
 const additionalChains: Chain[] = [
     {
@@ -151,7 +152,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <WagmiConfig client={wagmiClient}>
             <RainbowKitProvider chains={chains} theme={myCustomTheme}>
-                <Component {...pageProps} />;
+                <div className="flex flex-col bg-orange-100 min-h-screen">
+                    <BasicNavbar />
+                    <Component {...pageProps} />
+                </div>
             </RainbowKitProvider>
         </WagmiConfig>
     );

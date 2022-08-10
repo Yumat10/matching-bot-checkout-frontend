@@ -11,6 +11,9 @@ module.exports = {
                 bitter: ['Bitter'],
                 opensans: ['OpenSans'],
             },
+            height: {
+                navbar: 'var(--navbar-height)',
+            },
         },
     },
     plugins: [],
