@@ -3,10 +3,17 @@ import { BasicLinkButton } from '../../shared/button/BasicLinkButton';
 
 export const HomeText: FC = () => {
     return (
-        <div className="flex flex-col align-middle justify-center h-full bg-green-200">
+        <div className="flex flex-col align-middle justify-center h-full ">
             <div>
                 <h1 className="text-8xl font-inter">
-                    Personal Bonds Make <br /> The Difference
+                    <span className="hover:text-floodgate transition">
+                        Personal Bonds
+                    </span>{' '}
+                    Make All
+                    <br /> The{' '}
+                    <span className="hover:text-floodgate transition">
+                        Difference
+                    </span>
                 </h1>
             </div>
             <div className="mt-7 mb-16">

@@ -91,6 +91,7 @@
 
 :root {
     --navbar-height: 80px;
+    --margin-x-offset: 15rem;
 }
 
 @layer base {

@@ -152,7 +152,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <WagmiConfig client={wagmiClient}>
             <RainbowKitProvider chains={chains} theme={myCustomTheme}>
-                <div className="flex flex-col bg-orange-100 min-h-screen">
+                <div className="flex flex-col min-h-screen font-inter bg-offWhite text-offBlack">
                     <BasicNavbar />
                     <Component {...pageProps} />
                 </div>
