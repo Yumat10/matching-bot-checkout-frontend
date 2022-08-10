@@ -4,8 +4,7 @@ import { FC } from 'react';
 export const HomeImage: FC = () => {
     return (
         <div className="flex flex-row items-center h-full">
-            <div className="relative w-[550px] h-[550px] animate-shadowSlideOut cursor-pointer hover:scale-105 hover:animate-shadowSlideIn transition">
-                {/* <div className="absolute -right-5 -bottom-5 w-[550px] h-[550px] bg-offBlack delay-75 transition" /> */}
+            <div className="relative w-32 md:w-72 xl:w-96 2xl:w-[550px] h-32 md:h-72 xl:h-96 2xl:h-[550px] animate-shadowSlideOut cursor-pointer hover:scale-105 hover:animate-shadowSlideIn transition">
                 <Image
                     src="/OutliersNft.png"
                     alt=""

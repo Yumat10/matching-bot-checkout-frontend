@@ -11,6 +11,9 @@ module.exports = {
                 bitter: ['Bitter'],
                 opensans: ['OpenSans'],
             },
+            screens: {
+                '2xl': '1536px',
+            },
             height: {
                 navbar: 'var(--navbar-height)',
             },
@@ -21,6 +24,8 @@ module.exports = {
                 floodgateDark: '#191749',
             },
             margin: {
+                xSmallXOffset: 'var(--xsmall-margin-x-offset)',
+                smallXOffset: 'var(--small-margin-x-offset)',
                 xOffset: 'var(--margin-x-offset)',
             },
             animation: {
@@ -39,9 +44,6 @@ module.exports = {
                     },
                 },
                 shadowSlideIn: {
-                    '100%': {
-                        boxShadow: '0px 0px #55c5ef',
-                    },
                     '0%': {
                         boxShadow: '20px 20px #55c5ef',
                     },

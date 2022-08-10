@@ -5,7 +5,7 @@ export const HomeText: FC = () => {
     return (
         <div className="flex flex-col align-middle justify-center h-full ">
             <div>
-                <h1 className="text-8xl font-inter">
+                <h1 className="text-3xl md:text-6xl 2xl:text-8xl font-semibold lg:font-normal font-inter">
                     <span className="hover:text-floodgate transition">
                         Personal Bonds
                     </span>{' '}
@@ -17,7 +17,7 @@ export const HomeText: FC = () => {
                 </h1>
             </div>
             <div className="mt-7 mb-16">
-                <p className="text-3xl">
+                <p className="text-xl md:text-3xl">
                     Automatically generate 1-1 chats in Discord
                 </p>
             </div>

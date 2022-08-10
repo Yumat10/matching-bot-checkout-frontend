@@ -91,6 +91,8 @@
 
 :root {
     --navbar-height: 80px;
+    --xsmall-margin-x-offset: 1.5rem;
+    --small-margin-x-offset: 5rem;
     --margin-x-offset: 15rem;
 }
 
