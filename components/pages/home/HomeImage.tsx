@@ -6,7 +6,7 @@ export const HomeImage: FC = () => {
         <div className="flex flex-row items-center h-full">
             <div className="relative w-32 md:w-72 xl:w-96 2xl:w-[550px] h-32 md:h-72 xl:h-96 2xl:h-[550px] animate-shadowSlideOut cursor-pointer hover:scale-105 hover:animate-shadowSlideIn transition">
                 <Image
-                    src="/OutliersNft.png"
+                    src="/OutliersNFT.png"
                     alt=""
                     objectFit="contain"
                     layout="fill"
