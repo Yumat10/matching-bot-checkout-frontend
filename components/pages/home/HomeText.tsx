@@ -23,7 +23,7 @@ export const HomeText: FC = () => {
             </div>
             <BasicLinkButton
                 href="https://discord.com/api/oauth2/authorize?client_id=1005563817444519956&permissions=8&scope=bot"
-                text="Connect"
+                text="Add Bot to Server"
             />
         </div>
     );
