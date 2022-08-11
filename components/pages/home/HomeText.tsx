@@ -10,7 +10,7 @@ export const HomeText: FC = () => {
                         Personal Bonds
                     </span>{' '}
                     Make All
-                    <br /> The{' '}
+                    <br className="hidden 2xl:inline" /> The{' '}
                     <span className="hover:text-floodgate transition">
                         Difference
                     </span>
@@ -18,7 +18,7 @@ export const HomeText: FC = () => {
             </div>
             <div className="mt-7 mb-16">
                 <p className="text-xl md:text-3xl">
-                    Automatically generate 1-1 chats in Discord
+                    Automatically generate weekly 1-1 chats in Discord
                 </p>
             </div>
             <BasicLinkButton

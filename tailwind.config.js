@@ -33,6 +33,9 @@ module.exports = {
                     '1s ease-in-out 0.5s 1 normal both running shadowSlideOut',
                 shadowSlideIn:
                     '0.5s ease-in-out 0s 1 normal both running shadowSlideIn',
+                fadeIn: '0.5s ease-in-out 0s normal both running fadeIn',
+                delayedFadeIn:
+                    '0.5s ease-in-out 0.5s normal both running fadeIn',
             },
             keyframes: {
                 shadowSlideOut: {
@@ -46,6 +49,14 @@ module.exports = {
                 shadowSlideIn: {
                     '0%': {
                         boxShadow: '20px 20px #55c5ef',
+                    },
+                },
+                fadeIn: {
+                    '0%': {
+                        opacity: 0,
+                    },
+                    '100%': {
+                        opacity: 1,
                     },
                 },
             },
