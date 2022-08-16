@@ -41,7 +41,7 @@ export const HomeText: FC = () => {
                     How well do you know @user_5109?
                 </h1>
             </div>
-            <div className="mt-7 mb-16">
+            <div className="mt-7 mb-10 lg:mb-16">
                 <p className="text-lg md:text-xl 2xl:text-3xl">
                     Strong{' '}
                     <span className="text-floodgate">personal bonds</span> are

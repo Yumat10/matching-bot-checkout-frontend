@@ -43,12 +43,12 @@ module.exports = {
                         boxShadow: '0px 0px #55c5ef',
                     },
                     '100%': {
-                        boxShadow: '20px 20px #55c5ef',
+                        boxShadow: '15px 15px #55c5ef',
                     },
                 },
                 shadowSlideIn: {
                     '0%': {
-                        boxShadow: '20px 20px #55c5ef',
+                        boxShadow: '15px 15px #55c5ef',
                     },
                 },
                 fadeIn: {
