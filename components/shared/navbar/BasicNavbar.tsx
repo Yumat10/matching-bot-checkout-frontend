@@ -9,7 +9,9 @@ export const BasicNavbar: FC = () => {
             <div className="flex flex-row items-center h-navbar mx-xSmallXOffset md:mx-smallXOffset 2xl:mx-xOffset">
                 <div className="flex flex-row items-center gap-x-5">
                     <Link href="/">
-                        <a className=" text-2xl font-semibold">Philotes</a>
+                        <a className="text-xl md:text-2xl font-semibold">
+                            Philotes
+                        </a>
                     </Link>
                     <a
                         href="https://twitter.com/outlierdao"

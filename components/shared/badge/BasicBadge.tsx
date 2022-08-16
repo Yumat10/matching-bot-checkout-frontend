@@ -6,7 +6,7 @@ type BasicBadgeProps = {
 
 export const BasicBadge: FC<BasicBadgeProps> = ({ text }) => {
     return (
-        <div className="px-3 py-1 bg-floodgate h-fit rounded-md text-floodgateDark border-1 shadow-md">
+        <div className="px-3 py-1 bg-floodgateDark h-fit rounded-md text-floodgate border-1 shadow-md">
             {text}
         </div>
     );
