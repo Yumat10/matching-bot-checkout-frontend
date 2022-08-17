@@ -17,9 +17,11 @@ export const BasicNavbar: FC = () => {
                         href="https://twitter.com/outlierdao"
                         target="_blank"
                         rel="noreferrer"
-                        className="hover:scale-105 transition"
                     >
-                        <BasicBadge text="Outliers" />
+                        built by{' '}
+                        <span className="hover:text-floodgate hover:scale-105 hover:underline transition-all">
+                            Outliers
+                        </span>
                     </a>
                 </div>
             </div>
