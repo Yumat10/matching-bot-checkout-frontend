@@ -38,7 +38,7 @@ export const HomeText: FC = () => {
         <div className="flex flex-col align-middle justify-center h-full ">
             <div>
                 <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-semibold lg:font-normal font-inter">
-                    Building community, <br className="md:hidden" />
+                    Building community, <br className="hidden md:inline" />
                     one connection at a time
                 </h1>
             </div>
