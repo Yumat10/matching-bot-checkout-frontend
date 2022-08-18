@@ -37,12 +37,12 @@ export const HomeText: FC = () => {
     return (
         <div className="flex flex-col align-middle justify-center h-full ">
             <div>
-                <h1 className="text-3xl md:text-5xl 2xl:text-7xl font-semibold lg:font-normal font-inter">
-                    How well do you know @user_5109?
+                <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-semibold lg:font-normal font-inter">
+                    Building community, one connection at a time
                 </h1>
             </div>
             <div className="mt-7 mb-10 lg:mb-16">
-                <p className="text-lg md:text-xl 2xl:text-3xl">
+                <p className="text-lg md:text-xl 2xl:text-2xl">
                     Strong{' '}
                     <span className="text-floodgate">personal bonds</span> are
                     the most important aspect of a community. Help facilitate
