@@ -31,6 +31,13 @@ import { BasicLinkButton } from '../../shared/button/BasicLinkButton';
  * The value of your community lies within the new personal bonds created
  * The first step towards a great community is facilitating 1-on-1 conversations
  * Personal bonds are created when people meet 1-on-1
+ * 
+ * consider updating the language to be more concise:  
+
+Strong personal bonds are the most important aspect of a community. X bot matches people in your community for 1-on-1 chats.
+
+Strong personal bonds are the most important aspect of a community. X bot matches people in your Discord for 1-on-1 chats.
+
  */
 
 export const HomeText: FC = () => {
@@ -39,20 +46,22 @@ export const HomeText: FC = () => {
             <div>
                 <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-semibold lg:font-normal font-inter">
                     Building community, <br className="hidden md:inline" />
-                    one connection at a time
+                    <span className="hover:text-floodgate">
+                        one connection
+                    </span>{' '}
+                    at a time
                 </h1>
             </div>
             <div className="mt-7 mb-10 lg:mb-16">
-                <p className="text-lg md:text-xl 2xl:text-2xl">
+                <p className="text-lg md:text-xl 2xl:text-3xl">
                     Strong{' '}
                     <span className="text-floodgate">personal bonds</span> are
-                    the most important aspect of a community. Help facilitate
-                    1-on-1 chats in your Discord server with a bot that{' '}
-                    <i>does this for you.</i>
+                    the most important aspect of a community. The Philotes bot
+                    matches people in your Discord server for 1-on-1 chats.
                 </p>
             </div>
             <BasicLinkButton
-                href="https://discord.com/api/oauth2/authorize?client_id=1005563817444519956&permissions=8&scope=bot"
+                href="https://discord.com/api/oauth2/authorize?client_id=1009637251615043645&permissions=268435472&scope=bot"
                 text="Add Bot to Server"
             />
         </div>
