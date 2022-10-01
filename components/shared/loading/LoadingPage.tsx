@@ -1,10 +1,7 @@
 import { FC, ReactNode, useEffect, useState } from 'react';
 
-type LoadingPageProps = {
-    children: ReactNode;
-};
 
-export const LoadingPage = ({ children }: LoadingPageProps): JSX.Element => {
+export const LoadingPage = (): JSX.Element => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -14,7 +11,6 @@ export const LoadingPage = ({ children }: LoadingPageProps): JSX.Element => {
         return () => clearTimeout(stopLoadingTimeout);
     }, []);
 
-    if (loading)
         return (
             <div className="flex-grow flex flex-row items-center justify-center mx-xSmallXOffset md:mx-smallXOffset 2xl:mx-xOffset">
                 <p className="text-xl md:text-4xl animate-pulse">
@@ -23,6 +19,4 @@ export const LoadingPage = ({ children }: LoadingPageProps): JSX.Element => {
                 </p>
             </div>
         );
-
-    return <>{children}</>;
 };
