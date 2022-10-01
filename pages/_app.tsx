@@ -13,6 +13,7 @@ import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import { BasicNavbar } from '../components/shared/navbar/BasicNavbar';
+import PlausibleProvider from 'next-plausible';
 
 const additionalChains: Chain[] = [
     {
@@ -150,14 +151,16 @@ const myCustomTheme: Theme = {
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <WagmiConfig client={wagmiClient}>
-            <RainbowKitProvider chains={chains} theme={myCustomTheme}>
-                <div className="flex flex-col min-h-screen font-inter bg-offWhite text-offBlack">
+        <PlausibleProvider domain={'bot.outliers.build'} trackLocalhost={false}>
+            <WagmiConfig client={wagmiClient}>
+                <RainbowKitProvider chains={chains} theme={myCustomTheme}>
+                    <div className="flex flex-col min-h-screen font-inter bg-offWhite text-offBlack">
                         <BasicNavbar />
                         <Component {...pageProps} />
-                </div>
-            </RainbowKitProvider>
-        </WagmiConfig>
+                    </div>
+                </RainbowKitProvider>
+            </WagmiConfig>
+        </PlausibleProvider>
     );
 }
 
